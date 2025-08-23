@@ -1,0 +1,300 @@
+
+html, body {
+    background-color: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* Faz o main expandir para ocupar o espaço disponível */
+}
+
+footer {
+    flex-shrink: 0; /* Impede que o footer encolha */
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+
+h1, h2, p, a{
+    color: azure;
+    font-family:Impact;
+}
+
+header h1 {
+    font-family: Impact, sans-serif;
+    color: azure;
+}
+
+
+#BUT-CAB{
+
+    display: flex;
+    justify-content: center;
+}
+#BUT-CAB button{
+
+
+    height: 5px;
+    border: 0;
+    background-color: transparent;
+    font-family:Impact;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 150px;
+
+}
+
+#BUT-CAB button:hover{
+    background-color: rgb(255, 255, 255);;
+}
+
+#CAB-BASE{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+#NEWS {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin: 60px;
+    
+}
+
+#NEWS h3 {
+    margin: 5px;
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    font-family:Impact;
+}
+.subtext {
+    margin: 1px;
+    font-size: 20px;
+}
+
+#NEWS button {
+    display: flex;              
+    justify-content: center;   
+    align-items: center;    
+    flex-direction: column;     
+    background-color: rgb(18, 18, 18);
+    border-radius: 1px;
+    border: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 1230px;
+    
+}
+
+#NEWS button:hover {
+    transform: scale(1.01);
+}
+
+#NEWS img{
+    max-width: 1230px;
+    border-radius: 1px;
+    width: 100%;
+    height:auto;
+}
+
+#NEWS a {
+    text-decoration: none;
+}
+
+#NEWS2 {
+    padding: 5px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1280px;
+    
+}
+
+#NEWS2 a {
+    text-decoration: none;
+}
+
+#NEWS2 button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding-bottom: 15px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#NEWS2 button:hover {
+    transform: scale(1.03);
+}
+
+#NEWS2 img.N2 {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 1px solid #444;
+}
+
+#NEWS2 h4 {
+    margin: 10px 0 5px;
+    color: #ffffff;
+    font-family: Impact;
+    font-size: 20px;
+    text-align: center;
+}
+
+.subtext2 {
+    color: rgb(190, 190, 190);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 10px;
+    text-align: justify;
+    
+}
+
+/* .N2 {
+    width: 400px;
+    height: 3000px;
+} */
+
+.VERMAIS {
+
+    display: flex;
+    justify-content: center;
+
+}
+.VERMAIS button{
+
+    border-radius: 2px;
+    border: none;
+    background-color: #373737;
+    font-family: Impact;
+    font-size: 25px;
+    width: 150px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.VERMAIS button:hover{
+    transform: scale(1.02);
+}
+.ver {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#BOOKMARKS ul {
+    background-color: rgb(42, 42, 42);
+    text-align: center;
+
+}
+
+#BOOKMARKS li {
+    display: inline-block;
+    padding: 5px;
+    margin: 1px;
+
+}
+
+.icone img{
+    width: 50px;
+    
+}
+
+#NOTZ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#NOTZ img {
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 3px;
+    margin: 5px 0; 
+}
+
+.textonocianado  {
+    width: 90%;
+    max-width: 900px;
+    text-align: justify;
+    margin: 5px 0;
+}
+
+.textonocianado p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+    #NOTZ img {
+        width: 90%;
+        max-width: 900px;
+        height: auto;
+        border-radius: 3px;
+        margin: 5px 0; 
+    }
+
+    .textonocianado  {
+        text-align:justify;
+        margin-left: 40px;
+        margin-right: 40px;
+   
+    }
+
+    #BUT-CAB{
+        display: flex;
+        flex-direction:column-reverse;
+        width: 190px;
+        text-align: center;
+        /* background-color: blue; */
+        margin: auto;
+    
+    
+    }
+
+    #BUT-CAB button{
+        height: 100px;
+        background-color: transparent;
+        font-family:Impact;
+        cursor: pointer;
+        font-size: 35px;
+        
+
+    }
+
+    #BUT-CAB button:hover{
+        background-color: rgba(187, 187, 187, 0);
+        transform: scale(1.10);
+}
+        .icone img{
+        width: 90px;
+
+        }
+
+
+}
+
+li {
+    margin-top: 10px;
+    color: #ffffff;
+}

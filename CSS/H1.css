@@ -1,0 +1,775 @@
+
+html, body {
+    background-color: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* Faz o main expandir para ocupar o espaço disponível */
+}
+
+footer {
+    flex-shrink: 0; /* Impede que o footer encolha */
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+
+h1, h2, p, a{
+    color: azure;
+    font-family:Impact;
+}
+
+header h1 {
+    font-family: Impact, sans-serif;
+    color: azure;
+}
+
+#BUT-CAB{
+    display: flex;
+    justify-content: center;
+    
+}
+#BUT-CAB button{
+
+
+    height: 5px;
+    border: 0;
+    background-color: transparent;
+    font-family:Impact;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 150px;
+
+}
+
+#BUT-CAB button:hover{
+    background-color: rgb(255, 255, 255);;
+}
+
+#CAB-BASE{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+#BUTMARCAS{
+    display: flex;
+    justify-content: center;
+    
+
+}
+#BUTMARCAS button{
+
+    background-color: rgb(30, 30, 30);
+    border-radius: 6px;
+    border: transparent;
+    font-size: 18px;
+    font-family:Impact;
+    cursor: pointer;
+    width: 120px;
+    
+    
+}
+
+
+
+#BUTMARCAS button:hover{
+    background-color:rgb(100, 100, 100);
+}
+
+#H2MARCAS{
+    text-align: center;
+}
+#LOGOMARCA2{
+    width: 30%;
+}
+
+#LISTA {
+    display: flex;        
+    flex-direction: row;     
+    justify-content: center;    
+    gap: 15px;            
+    flex-wrap: wrap;            
+}
+
+
+#LISTA button{
+
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(30, 30, 30);
+    border-color: transparent;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    
+}
+.LOGOCARRO{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+#LISTA button:hover{
+    background-color: rgb(100, 100, 100);
+}
+
+.SUBLI{
+    text-decoration: none;
+}
+
+.minilogo{
+    width: 30px;
+}
+
+#TABELA {
+    display: flex;
+    justify-content: center;
+}
+
+#TABELA table{
+    margin: 20px auto;
+    line-height: 2.0em;
+    border-radius: 1px;
+    width: 50%;
+    text-align: center;
+
+}
+
+#TABELA td, th{
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
+}
+
+#DESCRI h3{
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+#DESCRI p{
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+#DESCRI2 h3,
+#DESCRI2 p {
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#OPINIAO h3,
+#OPINIAO p {
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+#FICHA,
+#HISTORIA,
+#GALERIA
+{
+    font-size: 27px;
+    
+}
+
+#BOOKMARKS ul {
+    background-color: rgb(42, 42, 42);
+    text-align: center;
+}
+
+#BOOKMARKS li {
+    display: inline-block;
+    padding: 5px;
+    margin: 1px;
+
+}
+
+.centrBANCARRO {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 300px;    
+}
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 300px;            
+}
+
+.imgcarro1 {
+    max-width: 100%;
+}
+
+                        /* GALERIA */
+
+#GALERIA {
+    display: flex;
+    justify-content: center;
+}
+
+
+#GALERIA2 img {
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.galeria-sanduiche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.linha-imagem-grande img {
+  width: 1000px;
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.linha-imagens-pequenas {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.linha-imagens-pequenas img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.galeria-sanduiche img:hover {
+  transform: scale(1.03);
+}
+
+.vid {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin: 30px 0;
+    gap: 15px;
+    flex-wrap: wrap;         
+    transition: transform 0.3s;
+
+}
+
+
+.vid iframe:hover{
+    transform: scale(1.03);
+}
+
+.FICHAA2{
+    margin: 50px;
+
+}
+
+.CenterVid {
+    border-radius: 5px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.TXTHISTORIA{
+    margin: 50px;
+}
+
+.content-container{
+    border-color: aqua;
+    flex-grow: 1;
+}
+
+.SUBLI button {
+  position: relative;
+  cursor: pointer;
+}
+
+.imgcima {
+  display: none;
+  position: absolute;
+  top: -40px; /* aparece acima do botão */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  z-index: 10;
+}
+
+.SUBLI button:hover .imgcima {
+  display: block;
+}
+
+
+#PRINCIPAL {
+    display: flex;
+    justify-content: center;
+}
+
+#MUCHOTEXTO {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    margin: 70px;
+    flex-direction: column;
+}
+
+.texto p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.icone img{
+    width: 50px;
+    
+}
+
+.imghistoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* quebra em telas pequenas */
+    padding: 10px;
+}
+
+.txtmin {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: row; /* imagem ao lado do texto */
+    align-items: center;
+    max-width: 100%;
+    background-color: rgba(188, 189, 190, 0);
+    gap: 20px; /* espaço entre imagem e texto */
+}
+
+.txtmin img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.txtmin img:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .txtmin {
+    flex-direction: column; /* empilha em telas pequenas */
+    text-align: center;
+  }
+  #TABELA {
+    margin: auto;
+    overflow-x: auto;
+  }
+  #TABELA table{
+    width: 80%;
+    max-width: 5px;
+    font-size: 12px;
+  }
+
+  #BUT-CAB{
+    display: flex;
+    flex-direction:column-reverse;
+    width: 190px;
+    text-align: center;
+    /* background-color: blue; */
+    margin: auto;
+    
+    
+    }
+
+  #BUT-CAB button{
+
+    height: 100px;
+    background-color: transparent;
+    font-family:Impact;
+    cursor: pointer;
+    font-size: 35px;
+    
+
+    }
+
+    #BUT-CAB button:hover{
+        background-color: rgba(187, 187, 187, 0);
+        transform: scale(1.10);
+}
+
+    #MUCHOTEXTO {
+        display: flex;
+        justify-content: center; /* centraliza horizontalmente */
+        align-items: center;     /* centraliza verticalmente */
+        margin: 20px;
+        flex-direction: column;
+}
+
+
+
+    .icone img{
+        width: 90px;
+    
+}
+    #BUTMARCAS {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #BUTMARCAS div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+        
+    }
+
+    #BUTMARCAS button {
+        width: 200px;
+        
+        
+    }
+
+}
+
+#INFO {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Opcional: ajuda na responsividade */
+    
+}
+
+#INFO div {
+    display: block;
+}
+
+#INFO p {
+    display: flex;
+}
+#INFO button{
+    background-color: transparent;
+    border-radius: 3px;
+    border: none;
+}
+#INFO img {
+    display: flex;
+    width: 50px;
+}
+
+#INFO img:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.RODRAVIC img {
+    width: 450px;
+    max-width: 40%;
+    display: block;    
+}
+
+.VERMAIS {
+
+    display: flex;
+    justify-content: center;
+
+}
+.VERMAIS button{
+
+    border-radius: 2px;
+    border: none;
+    background-color: #373737;
+    font-family: Impact;
+    font-size: 25px;
+    width: 200px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.VERMAIS button:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/*=============================PARTE DO BOOTSTRAP=======================*/
+
+
+.carousel {
+      position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  position: relative;
+}
+
+.carousel.pointer-event {
+  touch-action: pan-y;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    transition: none;
+  }
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transform: none;
+}
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+  z-index: 1;
+  opacity: 1;
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0s 0.6s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: none;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  filter: var(--bs-carousel-control-icon-filter);
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    transition: none;
+  }
+}
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e")*/;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/%3e%3c/svg%3e")*/;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: var(--bs-carousel-indicator-active-bg);
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-indicators [data-bs-target] {
+    transition: none;
+  }
+}
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: var(--bs-carousel-caption-color);
+  text-align: center;
+}
+
+.carousel-dark {
+  --bs-carousel-indicator-active-bg: #000;
+  --bs-carousel-caption-color: #000;
+  --bs-carousel-control-icon-filter: invert(1) grayscale(100);
+}
+
+:root,
+[data-bs-theme=light] {
+  --bs-carousel-indicator-active-bg: #fff;
+  --bs-carousel-caption-color: #fff;
+  --bs-carousel-control-icon-filter: ;
+}
+
+[data-bs-theme=dark] {
+  --bs-carousel-indicator-active-bg: #000;
+  --bs-carousel-caption-color: #000;
+  --bs-carousel-control-icon-filter: invert(1) grayscale(100);
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 600px) {
+
+    .carousel-inner img {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        display: flex;
+
+
+}
+    .carousel-inner  {
+        width: 1000px;
+
+}
+
+
+}
